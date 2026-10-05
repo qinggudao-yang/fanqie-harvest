@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 数据（不得提交：版权与隐私）
+data/
+research/
+*.jsonl
+*.txt
+!requirements.txt
+
+# 凭据（绝不提交）
+creds.json
+*.cookies
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 下载器运行时
+logs/
+*.log
