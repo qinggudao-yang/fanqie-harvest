@@ -11,7 +11,23 @@
 
 **不需要**：模拟器、APP、账号登录。
 
-## 二、快速验证
+## 二、准备下载器（首次必做）
+
+本仓库**不附带**下载器可执行文件，请自行下载：
+
+1. 访问 https://github.com/zhongbai2333/Tomato-Novel-Downloader/releases
+2. 下载 `TomatoNovelDownloader-Win64-v2.4.15.exe`
+3. 重命名为 `tnd.exe`，放入本目录的 `bin/` 子目录
+
+```
+fanqie-harvest/
+  bin/
+    tnd.exe    ← 放这里
+```
+
+> 核心下载能力来自该项目，感谢作者 zhongbai2333。
+
+## 三、快速验证
 
 ```bash
 cd fanqie-harvest
@@ -20,7 +36,7 @@ python check.py
 
 看到 `环境就绪，可开始采集` 即可使用。
 
-## 三、基本用法
+## 四、基本用法
 
 ### 3.1 按书名找书
 
@@ -81,7 +97,7 @@ python fanqie.py export <book_id> <标识>
 
 输出扁平 JSONL，每条评论一行，含段落定位与对齐标注。
 
-## 四、章评凭据配置（可选）
+## 五、章评凭据配置（可选）
 
 **仅章评功能需要**。正文、段评、搜索均不需要。
 
@@ -103,7 +119,7 @@ adb shell "su 0 cat /data/data/com.dragon.read/shared_prefs/cookieStore.xml"
 
 **注意**：凭据属于个人账号，**自行使用，不要分享给他人**。
 
-## 五、输出结构
+## 六、输出结构
 
 ```
 data/
@@ -119,7 +135,7 @@ research/data/raw/
   fanqie_comments/               章评
 ```
 
-## 六、常见问题
+## 七、常见问题
 
 ### Q: 段评卡住不动了？
 
@@ -145,7 +161,7 @@ for id in <id1> <id2> <id3>; do
 done
 ```
 
-## 七、合规与免责
+## 八、合规与免责
 
 - 本工具**仅供学习研究**使用
 - 采集内容版权归原作者与平台所有，**不得商用或再分发**

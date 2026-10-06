@@ -130,7 +130,7 @@ research/data/raw/
 ## ⚙️ 依赖
 
 - **Python 3.8+**（仅标准库）
-- **Tomato-Novel-Downloader v2.4.15**（已附带 `bin/tnd.exe`）
+- **Tomato-Novel-Downloader v2.4.15**（需自行下载，见 [INSTALL.md](INSTALL.md)）
 
 > 核心下载能力来自开源项目 [Tomato-Novel-Downloader](https://github.com/zhongbai2333/Tomato-Novel-Downloader)（作者 zhongbai2333）。本工具在其之上做了封装与增强，详见 [ORIGINALITY.md](ORIGINALITY.md)。
 
